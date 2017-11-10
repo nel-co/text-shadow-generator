@@ -1,14 +1,6 @@
 <!doctype html>
 <html>
 
-<!-- 
-	**TODO**
-	CHANGE to hamburger menu with bottom links
-	ADD vow
-	ADD reddit-clone
-	ADD preloading-component 
--->
-
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -16,11 +8,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Hey, I'm Nelson. A front-end developer based in the Greenville-Spartanburg area of South Carolina. From flyers and business cards to logos and banners, I can help you create anything you need.">
 	<meta name="keywords" content="greenville sc, web design greenville south carolina, spartanburg sc, web design spartanburg south carolina graphic design, logo design, print design, brochure design, flyer design, business card, banner ad, banners, upstate sc, web developer, freelance">
-	<link rel="shortcut icon" href="favicon.ico?v=2" />
-	<link rel="stylesheet" href="normalize.css">
+	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="styles/index.css">
 </head>
 
 <body>
@@ -39,7 +30,8 @@
 				<i class="fa fa-github-alt" aria-hidden="true"></i> - GitHub</a>
 			<a href="http://instagram.com/nelsoncothran" target="_blank">
 				<i class="fa fa-instagram" aria-hidden="true"></i> - Instagram</a>
-			<!--						<li><a href="#">LinkedIn</a></li>-->
+			<a href="https://www.linkedin.com/in/nelson-cothran/" target="_blank">
+				<i class="fa fa-linkedin-square" aria-hidden="true"></i> - Linkedin</a>
 			<a href="mailto:hello@heyimnelson.com">
 				<i class="fa fa-envelope" aria-hidden="true"></i> - Email</a>
 		</div>
@@ -50,21 +42,20 @@
 	<div id="top"></div>
 	<div id="bottom"></div>
 
+	<div id="particles-js"></div>
 	<div class="header">
-
-		<div class="container">
-			<div class="row welcome">
+		<div class="header-container">
+			<div class="welcome">
 				<h6 class="title">Hey, I'm Nelson.</h6>
-				<h1 class="headline col s12">I help create beautiful,
-					<br> innovative, handcrafted
-					<span class="highlight"></span>
+				<h1 class="headline col s12">I help create <span class="blue-txt">beautiful</span>,
+					<br> <span class="yellow-txt">innovative</span>, & <span class="orange-txt">handcrafted</span> front-ends.
 				</h1>
 				<div class="row music"></div>
 			</div>
 		</div>
 
 		<div class="scroll-down">
-			<div class="scroll-animation"></div>
+			<i class="fa fa-chevron-down" aria-hidden="true"></i>
 		</div>
 
 	</div>
@@ -87,7 +78,6 @@
 				</a>
 			</div>
 		</div>
-
 		<div class="row">
 			<div class="col l4 work">
 				<a href="discflix">
@@ -105,7 +95,6 @@
 				</a>
 			</div>
 		</div>
-
 		<div class="row">
 			<div class="col l4 work">
 				<a href="vow">
@@ -123,17 +112,56 @@
 				</a>
 			</div>
 		</div>
-
 	</div>
 
-	<div class="container clients">
-		<h6 class="title client-text">A few people that I've been lucky to work with</h6>
+	<div class="clients">
+		<div class="container">
+				<h6 class="client-text">A few people that I've been lucky to work with</h6>
+				<div class="row">
+					<div class="col s12 l2">
+						<img class="responsive-img" src="img/clients/flip-flop.jpg" alt="">					
+					</div>
+					<div class="col s12 l2">
+						<img class="responsive-img" src="img/clients/fest.jpg" alt="">					
+					</div>
+					<div class="col s12 l2">
+						<img class="responsive-img" src="img/clients/derby.png" alt="">					
+					</div>
+					<div class="col s12 l2">
+						<img class="responsive-img" src="img/clients/deci.jpg" alt="">					
+					</div>
+					<div class="col s12 l2">
+						<img class="responsive-img" src="img/clients/data.jpg" alt="">					
+					</div>
+					<div class="col s12 l2">
+						<img class="responsive-img" src="img/clients/meet.jpg" alt="">					
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12 l2">
+						<img class="responsive-img" src="img/clients/soul.jpg" alt="">
+					</div>
+					<div class="col s12 l2">
+						<img class="responsive-img" src="img/clients/texas.jpg" alt="">
+					</div>
+					<div class="col s12 l2">
+						<img class="responsive-img" src="img/clients/samanage.jpg" alt="">
+					</div>
+					<div class="col s12 l2">
+						<img class="responsive-img" src="img/clients/kapta.jpg" alt="">
+					</div>
+					<div class="col s12 l2">
+						<img class="responsive-img" src="img/clients/fun.jpg" alt="">
+					</div>
+					<div class="col s12 l2">
+						<img class="responsive-img" src="img/clients/btech.jpg" alt="">
+					</div>
+				</div>
+		</div>
 	</div>
-
-	<div class="cli cIcon"></div>
 
 	<footer id="footer">
-		<div class="footer-top">I'm based in South Carolina, but work with companies all over the world. Have a project? Let's talk about it.</div>
+		<div class="footer-top">I'm based in <span class="blue-txt">South Carolina</span>, but work with companies all over the world. Have a project? Let's talk about it.</div>
 		<a href="mailto:hello@heyimnelson.com" target="_top">
 			<div class="footer-bot">
 				<span>Email Me</span>
@@ -142,12 +170,7 @@
 		</a>
 	</footer>
 
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-	  crossorigin="anonymous"></script>
-	<script src="smooth.js"></script>
-	<script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
-	<script src="typed.js"></script>
-	<script src="app.js"></script>
+	<script src="js/index.js"></script>
 </body>
 
 </html>

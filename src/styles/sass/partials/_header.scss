@@ -1,0 +1,100 @@
+#particles-js{
+  position:absolute;
+  top:0;
+  width:100%;
+  height:100%;
+  background: $black;
+  
+}
+
+.header {
+  color: white;
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
+
+  .scroll-down {
+    position: absolute;
+    bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: mouseScroll 1s linear infinite;    
+  }
+
+  @keyframes mouseScroll {
+    0% {
+      transform: rotate(6deg);
+    }
+    5% {
+      transform: rotate(4deg);      
+    }
+    7% {
+      transform: rotate(5deg);      
+    }
+    25%{
+      transform: rotate(-6deg);
+    }
+    75% {
+      transform: rotate(0deg);      
+    }
+  }
+
+.title, .title a, .title-project {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: .6;
+  margin-bottom: -20px;
+  letter-spacing: 1px; }
+
+.headline, .project-headline {
+  font-weight: 900;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 10px; }
+
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-info {
+  padding-top: 20%;
+}
+
+.header-btn {
+  text-align: center;
+  padding-bottom: 50px; }
+  
+  /* Music section */
+.music {
+  padding: 40px;
+  color: #919191;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 45px;
+  letter-spacing: 1px;
+  pointer-events: auto;
+}
+
+#spotify,
+#spotify-green {
+  color: $green;
+}

@@ -1,0 +1,28 @@
+#top, #bottom, #left, #right {
+  background: $lightGrey;
+  position: fixed;
+  z-index: 99; }
+
+#left,
+#right {
+  top: 0;
+  bottom: 0;
+  width: $borderSize; }
+
+#left {
+  left: 0; }
+
+#right {
+  right: 0; }
+
+#top,
+#bottom {
+  left: 0;
+  right: 0;
+  height: $borderSize; }
+
+#top {
+  top: 0; }
+
+#bottom {
+  bottom: 0; }

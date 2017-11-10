@@ -1,0 +1,54 @@
+footer {
+  @include borderTop;
+  background: $black;
+  color: white;
+  font-weight: 700;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+.footer-top {
+  font-size: 22px;
+  padding-bottom: 15px;
+  width: 70%;
+  text-align: center;
+}
+
+.footer-bot {
+  border: 2px solid white;
+  border-radius: 45px; 
+  padding: 15px 45px 15px 45px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.footer-bot i {
+  margin-left: 10px; 
+}
+
+.footer-bot:hover i {
+  animation: btnHover 1.3s ease infinite;
+}
+
+@keyframes btnHover {
+  0%,100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(9px);     
+  }
+}
