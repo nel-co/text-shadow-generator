@@ -54,6 +54,7 @@ gulp.task('watch', function () {
     server: {
       baseDir: 'build/',
     },
+    browser: "chrome"    
   });
   // Watch .html files
   gulp.watch('build/*.html', ['html']);
