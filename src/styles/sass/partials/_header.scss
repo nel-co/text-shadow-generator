@@ -1,14 +1,12 @@
-#particles-js{
+#particles-js {
   position:absolute;
   top:0;
   width:100%;
   height:100%;
-  background: $black;
-  
+  transition: all .20s ease;
 }
 
 .header {
-  color: white;
   width: 90%;
   margin: 0 auto;
   height: 100%;
@@ -18,34 +16,48 @@
   position: relative;
   z-index: 1;
   pointer-events: none;
+  transition: all .25s ease;
 }
 
-  .scroll-down {
-    position: absolute;
-    bottom: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: mouseScroll 1s linear infinite;    
-  }
+.toggle-section {
+  position: absolute;
+  bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto;
+  cursor: pointer;
+}
 
-  @keyframes mouseScroll {
-    0% {
-      transform: rotate(6deg);
-    }
-    5% {
-      transform: rotate(4deg);      
-    }
-    7% {
-      transform: rotate(5deg);      
-    }
-    25%{
-      transform: rotate(-6deg);
-    }
-    75% {
-      transform: rotate(0deg);      
-    }
-  }
+.toggle-switch {
+  height: 20px;
+  width: 40px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: all .25s ease;  
+}
+
+.toggle-btn {
+  background: white;
+  height: 10px; width: 10px;
+  border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  transition: all .15s ease;
+}
+
+.toggle-switch.light-theme {
+  border-color: $black;
+}
+
+.toggle-btn.light-theme {
+  background: $black;
+  left: 24px;
+}
 
 .title, .title a, .title-project {
   text-align: center;
@@ -97,4 +109,20 @@
 #spotify,
 #spotify-green {
   color: $green;
+}
+
+.header.dark-theme {
+  color: white;
+}
+
+#particles-js.dark-theme {
+  background: $black;
+}
+
+#particles-js.light-theme {
+  background: white;
+}
+
+.header.light-theme {
+  color: $black;
 }
