@@ -28,7 +28,7 @@
 }
 
 .project-text a {
-  color: #f26246; }
+  color: $orange; }
 
 .project-case-wrapper {
   width: 100%;
@@ -39,7 +39,7 @@
   padding: 4px;
   color: white;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .ov {
@@ -59,8 +59,8 @@
   text-align: left;
   margin-top: 15px;
   margin-bottom: 5px;
-  font-family: 'Neuton', serif;  
-  font-size: 21px;
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 16px;
   line-height: 32px;
   color: $lightBlack;
 }
@@ -86,15 +86,25 @@
   margin-bottom: 60px; }
 
 .side-headline a {
-  color: #f26246;
-  font-size: 18px;
+  color: $orange;
+  font-size: 16px;
   font-weight: 900;
-  text-decoration: underline; }
+  // text-decoration: underline;
+  // padding-bottom: 4px;
+  border-bottom: 2px solid $orange;
+  &:hover {
+    text-decoration: none;
+    background: $orange;
+    color: white;
+    transition: all .2s
+  }
+}
 
 .side-description {
-  color: #464646;
+  color: $lightBlack;
   font-size: 14px;
   font-family: 'Montserrat', sans-serif;
+  font-family: 'Source Code Pro', monospace;
   line-height: 1.9; }
   .side-description a {
     color: #f26246;
