@@ -1,0 +1,57 @@
+.code-wrapper {
+  font-family: 'Fira-Mono', monospace;
+  background: $codeBG;
+  color: #ffffff;
+  padding: 50px;
+  font-size: 1.4em;
+  position: relative;
+  .code-title {
+    color: $codeText;
+  }
+  i {
+    padding-left: 30px;
+    color: rgba($color: #ffffff, $alpha: .3);
+    cursor: pointer;
+    &:hover {
+      color: $codeText;
+    }
+  }
+  .code-copied {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: $codeBG;
+    font-weight: bold;
+    text-align: center;
+    background: $codeText;
+    padding: 10px 0px;
+    width: 100%;
+    z-index: -1;
+    transition: all .1s ease;
+  }
+}
+
+.sliding {
+  animation: slideDown .1s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+    bottom: 0px;
+  }
+  to {
+    bottom: -36px
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .code-wrapper {
+    i {
+      padding-left: 0px;
+    }
+  }
+}
+
+input[type=range]:focus span.hShad {
+  color: $codeFocus;
+}

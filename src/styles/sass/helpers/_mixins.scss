@@ -1,3 +1,5 @@
-@mixin borderTop {
-  border-top: $borderSize solid $lightGrey;
+@mixin trueCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
